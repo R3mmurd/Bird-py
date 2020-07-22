@@ -33,3 +33,9 @@ Control keys are:
 - Flappy font from [https://www.dafont.com/04b-19.font](https://www.dafont.com/04b-19.font).
 - Sound effects made with [bfxr](https://www.bfxr.net/).
 - Music from [https://opengameart.org/](https://opengameart.org/).
+
+## Demo
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=jc_YaUblIpo
+" target="_blank"><img src="http://img.youtube.com/vi/jc_YaUblIpo/0.jpg"6
+alt="Demo Flappy Bird" width="240" height="180" border="10" /></a>.
