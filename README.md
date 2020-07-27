@@ -50,5 +50,5 @@ Control keys are:
 ## Demo
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=jc_YaUblIpo
-" target="_blank"><img src="http://img.youtube.com/vi/jc_YaUblIpo/0.jpg"6
+" target="_blank"><img src="http://img.youtube.com/vi/jc_YaUblIpo/0.jpg"
 alt="Demo Flappy Bird" width="240" height="180" border="10" /></a>.
