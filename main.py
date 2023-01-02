@@ -49,19 +49,19 @@ class BirdGame:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    sys.exit()  
+                    sys.exit()
                 elif event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         pygame.quit()
                         return
                     else:
                         settings.pressed_keys[event.key] = True
-            
+
             dt = self.clock.tick() / 1000
             self.update(dt)
             self.render()
             settings.pressed_keys = {}
-    
+
     def update(self, dt):
         if not settings.paused:
             self.background_x = (
@@ -71,7 +71,7 @@ class BirdGame:
             self.ground_x = (
                 (self.ground_x + settings.GROUND_SPEED * dt)
                 % settings.VIRTUAL_WIDTH
-                )
+            )
         self.state_machine.update(dt)
 
     def render(self):
@@ -81,7 +81,7 @@ class BirdGame:
             settings.GAME_TEXTURES['background'],
             (int(-self.background_x), 0)
         )
-        
+
         self.state_machine.render(self.surface)
 
         self.surface.blit(

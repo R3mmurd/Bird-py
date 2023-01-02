@@ -50,7 +50,7 @@ class PlayState(BaseState):
             # of height difference with the last one. This is
             # to grant a smooth height change between logs.
             next_y = self.last_log_y + random.randint(-20, 20)
-            
+
             # Ensure that next_y is neither less than 100 nor
             # greater than VIRTUAL_HEIGHT - 20
             next_y = max(100, min(next_y, settings.VIRTUAL_HEIGHT - 20))

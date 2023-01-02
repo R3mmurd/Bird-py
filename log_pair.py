@@ -21,11 +21,12 @@ class LogPair:
         self.upper_log = Log(x, y - settings.LOG_HEIGHT - gap, 'upper')
         self.remove = False
         self.scored = False
-    
+
     def collides(self, bird):
         return (
             bird.collides(self.lower_log) or bird.collides(self.upper_log)
         )
+
     def update(self, dt):
         if self.x < -settings.LOG_WIDTH:
             self.remove = True
@@ -33,7 +34,7 @@ class LogPair:
             self.x += -settings.LOG_SPEED * dt
             self.lower_log.x = self.x
             self.upper_log.x = self.x
-    
+
     def render(self, surface):
         self.lower_log.render(surface)
         self.upper_log.render(surface)

@@ -5,6 +5,7 @@ Author: Alejandro Mujica (aledrums@gmail.com)
 Date: 07/11/2020
 """
 
+
 class BaseState:
     def __init__(self, state_machine):
         self.state_machine = state_machine

@@ -13,7 +13,7 @@ from render import render_text
 
 
 class StartState(BaseState):
-    def update(self, dt):   
+    def update(self, dt):
         if settings.pressed_keys.get(pygame.K_RETURN):
             self.state_machine.change('count')
 

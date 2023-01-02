@@ -41,7 +41,7 @@ LOG_GAP = 80
 GRAVITY = 980
 
 # Dictionary of sound effects
-GAME_SOUNDS =  {
+GAME_SOUNDS = {
     'jump': pygame.mixer.Sound('sounds/jump.wav'),
     'score': pygame.mixer.Sound('sounds/score.wav'),
     'death': pygame.mixer.Sound('sounds/death.wav'),
@@ -63,7 +63,7 @@ GAME_TEXTURES = {
     'log': pygame.image.load('graphics/log.png'),
 }
 
-# This dictionary is initialized empty. 
+# This dictionary is initialized empty.
 # When a key is pressed (detected by the KEYDOWN event),
 # it will be added to this dictionary associating it the value True.
 #

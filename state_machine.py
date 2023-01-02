@@ -33,10 +33,9 @@ class StateMachine:
         self.current.exit()
         self.current = self.states[state_name](self)
         self.current.enter(*args, **kwargs)
-    
+
     def update(self, dt):
         self.current.update(dt)
 
     def render(self, surface):
         self.current.render(surface)
-

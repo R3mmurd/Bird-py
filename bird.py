@@ -25,7 +25,7 @@ class Bird:
         return self.get_collision_rect().colliderect(
             log.get_collision_rect()
         )
-    
+
     def update(self, dt):
         self.vy += settings.GRAVITY * dt
 
